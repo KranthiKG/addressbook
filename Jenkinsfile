@@ -2,8 +2,8 @@ pipeline {
 
 agent { node { label 'master' } }
 tools {
-        maven 'maven3.3.9' 
-        jdk 'jdk1.8'
+        maven 'local_maven' 
+        jdk 'local_jdk'
     }
 stages {
         stage('Code validate') {
